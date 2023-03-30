@@ -1,31 +1,22 @@
-.form {
-  display: flex;
+.speed-conversion-container {
   width: 100%;
-  height: auto;
-  background-color: aqua;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.title {
-  text-align: center;
-}
-.Speed {
-  text-align: center;
-}
-.kilometer-per-hour {
-  text-align: center;
-}
-.millimeter-per-hour {
-  text-align: center;
-}
-.meter-per-minute {
-  text-align: center;
-}
-.meter-per-second {
-  text-align: center;
-}
-.speed-content {
+.speed-conversion-content {
   width: 500px;
+  height: 500px;
+  background-color: aqua;
+  margin: 0 auto;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: antiquewhite;
+  justify-content: space-around;
+}
+#speed, #kmph, #mps, #mph, #fps, #convert {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
 }

@@ -1,20 +1,23 @@
-function kmph(x) {
-  return parseFloat (x) / 3.6;
+function kmph (x) {
+  return parseFloat(x) / 3.6;
 }
-function mph(y) {
-  return parseFloat (y) * 0.0002777778;
+function mps (y) {
+  return parseFloat (y) * 3.6;
 }
-function mpm (z) {
-  return parseFloat (z) * 3.6;
+function mph (z) {
+ return parseFloat (z) / 2.237;
+}
+function fps (g) {
+ return parseFloat (g) / 3.281;
 }
 
-let cSpeed = document.getElementById("speed").value;
 
-function display () {
-let cSpeed = document.getElementById("speed").value;
+function display() {
 
-document.getElementById("kmph").innerHTML = kmph(cSpeed);
-document.getElementById("mph").innerHTML = mph(cSpeed);
-document.getElementById("mpm").innerHTML = mpm (cSpeed);
+  let cSpeed = document.getElementById("speed").value;
 
+  document.getElementById("kmph").value = kmph (cSpeed);
+  document.getElementById("mps").value = mps (cSpeed);
+  document.getElementById("mph").value = mph (cSpeed);
+  document.getElementById("fps").value = fps (cSpeed);
 }

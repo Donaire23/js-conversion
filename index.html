@@ -5,43 +5,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/css/style.css" rel="stylesheet">
-  <title>Speed Conversion</title>
+  <title>JS Conversion</title>
 </head>
 <body>
   
-  
-  <form class="background">
-    <div class="speed-content">
-      <div class="content">
-        <div class="title">
-          <h1>Speed Conversion</h1>
+  <form>
+    <div class="speed-conversion-container">
+      <div class="speed-conversion-content">
+        <h1>Speed Conversion</h1>
+        <div class="input-speed">
+          <label>Speed</label>
+          <input type="number" id="speed" placeholder="Speed">
         </div>
-
-        <div class="Speed">
-          <label>Enter the Speed</label>
-          <input type="number" id="speed" oninput="display()"   placeholder="Input speed">
-        </div>
-        <div class="kilometer-per-hour">
-          <p>Kilomter per hour</p>
-          <h1 id="kmph"></h1>
-        </div>
-        <div class="millimeter-per-hour">
-          <p>millimeter per hour</p>
-          <h1 id="mph"></h1>
-        </div>
-        <div class="meter-per-second">
-          <p>Meter Per Second</p>
-          <h1 id="mpm"></h1>
-        </div>
-      </div>
-
-      </div>
       
+        <div class="kmp/h">
+          <label>Kilometer Per Hour</label>
+          <input id="kmph">
+        </div>
+        
+       <div class="mp/s">
+        <label>Meter per second</label>
+        <input id="mps">
+       </div>
+        
+       <div class="mp/h">
+        <label>Mile per hour</label>
+        <input id="mph">
+       </div>
+        
+
+       <div class="fp/s">
+        <label>Foot per second</label>
+        <input id="fps">
+       </div>
+
+       <input type="button" onclick="display()" value="Convert" id="convert">
+       
+      
+      </div>  
+    </div>
   </form>
 
-  
-
   <script src="assets/script/script.js"></script>
+
+
+
 
 </body>
 </html>
