@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+}
+.title {
+  text-align: center;
+}
+.Speed {
+  text-align: center;
+}
+.kilometer-per-hour {
+  text-align: center;
+}
+.millimeter-per-hour {
+  text-align: center;
+}
+.meter-per-minute {
+  text-align: center;
+}
+.meter-per-second {
+  text-align: center;
+}
+.speed-content {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: antiquewhite;
+}
